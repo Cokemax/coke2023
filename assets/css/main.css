@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+
+.back {
+    width: 100px;
+    height: 100px;
+    background: #dedede;
+}
+
+.cube {
+    line-height: 100px;
+    text-align: center;
+
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap {
+    margin-top: 50px;
+    height: 500vh;
+    background: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.fa-20 {
+    font-size: 36px;
+}
+
+.fa-san {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
+
+.bg-rgb {
+    background-color: rgb(30, 235, 166);
+    margin: 10px auto;
+}
+
+.text {
+    text-align: center;
+
+}
+
+.be-image {
+    width: 195px;
+    height: 250px;
+    background: #dedede;
+    background-image: url(../images/cat2.jpg);
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+
+.border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: blueviolet;
+    color: rgb(231, 106, 165);
+    font-size: 25px;
+    padding: 35px 25px;
+    margin: 10px auto;
+}
+
+.but {
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    background: rgb(54, 226, 54);
+    color: rgb(12, 12, 11);
+    border-radius: 8px;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    cursor: pointer;
+}
+
+.but:hover {
+    background: rgb(230, 224, 153);
+    color: red;
+}

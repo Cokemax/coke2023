@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .video-block {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .slogan {
+            position: relative;
+            z-index: 9;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 2;
+            background: #34313168;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-block">
+        <h1 class="slogan">Hello world</h1>
+        <video loop muted autoplay>
+            <source src="/assets/resource/production_id_4763824 (2160p).mp4">
+        </video>
+        <div class="mask"></div>
+    </div>
+</body>
+
+</html>
