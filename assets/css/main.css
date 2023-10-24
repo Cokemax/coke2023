@@ -167,3 +167,61 @@ img {
     top: 30px;
     left: 30px;
 }
+
+.a1 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgb(241, 168, 59);
+    margin: 10px auto
+}
+
+.a2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    left: 55px;
+    background: #fff;
+    border-radius: 100px;
+}
+
+.a2-1 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    border-radius: 100px;
+}
+
+.a3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    right: 55px;
+    background: #fff;
+    border-radius: 100px;
+}
+
+.a4 {
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    background: #fff;
+    bottom: 30px;
+    left: 115px;
+    overflow: hidden;
+}
+
+.a4-1 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    background: red;
+    bottom: -25px;
+    left: calc(50% - 35px);
+    border-radius: 100px;
+}
