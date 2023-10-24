@@ -142,3 +142,28 @@ img {
     background: rgb(230, 224, 153);
     color: red;
 }
+
+
+.z-block-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #dedede;
+}
+
+.z-block-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+.z-99 {
+    z-index: 99;
+}
+
+.z-block-item.item-2 {
+    background: red;
+    top: 30px;
+    left: 30px;
+}
