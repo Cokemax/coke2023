@@ -1,0 +1,95 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cecece;
+}
+
+.header-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.header-wrap .right-side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-button {
+    display: flex;
+    gap: 10px;
+}
+
+.link-button a {
+    display: inline-block;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.4s;
+    font-size: 1.2rem;
+}
+
+.link-button a:hover,
+.link-button li.active a {
+    color: rgb(14, 60, 160);
+}
+
+.header .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .left-side {
+    position: relative;
+    padding-right: 30px;
+    margin-right: 15px;
+}
+
+.header .left-side::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 2px;
+    background: #cecece;
+}
+
+.min {
+    height: 150vh;
+}
+
+.footer {
+    content: "";
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 2px;
+    background: #cecece;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer .menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
