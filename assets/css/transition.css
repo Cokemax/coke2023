@@ -1,0 +1,24 @@
+.warp {
+    margin: 30px auto;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: #dd6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    transition-duration: 5s;
+}
+
+.block.change-color {
+    background: #000;
+    color: #fff;
+}
+
+.block.property {
+    transition-property: background-color;
+}
