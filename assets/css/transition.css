@@ -42,31 +42,32 @@
     transition-property: background-color;
 }
 
-.info-warp {
+.info-wrap {
     display: flex;
     flex-direction: column;
     gap: 20px;
     position: relative;
+    height: 500px;
 }
 
 .info-item {
     width: 200px;
     height: 100px;
-    background: #dedede;
+    background-color: #dedede;
     margin-bottom: 20px;
     transition: 1s;
 }
 
-.info-item .t1 {
+.info-item.t1 {
     position: absolute;
     left: 0;
 }
 
-.info-item .t2 {
+.info-item.t2 {
     position: absolute;
     top: 100px;
     right: 0;
-    transition-delay: 1s
+    transition-delay: 1s;
 }
 
 .info-wrap.active .t1 {
@@ -75,6 +76,83 @@
 
 .info-wrap.active .t2 {
     right: 50%;
+}
+
+.runrun {
+    position: relative;
+    left: 0;
+    animation-name: runrun;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.cloud-block {
+    width: 100%;
+    height: 500px;
+    background: #83d4da;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+}
+
+.cloud {
+    width: 250px;
+    height: 100px;
+    margin: 200px 200px;
+    background: #fff;
+    position: relative;
+    border-radius: 500px;
+    animation-name: cloud;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.cloud::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    top: -40px;
+    left: 48px;
+    border-radius: 500px;
+}
+
+.cloud::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    top: -60px;
+    right: 30px;
+    border-radius: 500px;
+}
+
+
+
+@keyframes cloud {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes runrun {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 300px;
+    }
 }
 
 @keyframes change-color {
