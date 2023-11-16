@@ -21,3 +21,8 @@ ul {
     margin: auto;
     position: relative;
 }
+
+html,
+body {
+    scroll-behavior: smooth;
+}
