@@ -143,4 +143,9 @@ img {
 .project-count {
     display: flex;
     gap: 15px;
+    align-items: center;
+}
+
+.project-icon>span:last-child {
+    color: #20b84e;
 }
