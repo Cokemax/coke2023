@@ -1,0 +1,86 @@
+:root {
+    --header-h: 70px;
+    --header-bg: rgb(255, 255, 255);
+    --header-border-color: #ececec;
+}
+
+html,
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.header {
+    height: var(--header-h);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid var(--header-border-color);
+}
+
+.header-warp {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.left-logo {
+    border-right: 2px solid var(--header-border-color);
+    text-align: center;
+}
+
+.left-logo img {
+    max-width: 70%;
+}
+
+.right-side {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+
+}
+
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-buttons a {
+    padding: 5px 10px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.menu-buttons a:hover,
+.menu-buttons a.active {
+    color: rgb(25, 108, 202);
+}
+
+.proudct-information {
+    margin: 20px auto;
+}
+
+.proudct-information-warp {
+    display: flex;
+}
+
+.proudct-information-warp video {
+    flex: 2;
+}
+
+.proudct-information-warp text {
+    flex: 1;
+}
