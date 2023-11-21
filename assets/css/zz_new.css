@@ -10,7 +10,7 @@ body {
     font-size: 16px;
 }
 
-.img {
+img {
     max-width: 100%;
 }
 
@@ -77,10 +77,30 @@ body {
     display: flex;
 }
 
-.proudct-information-warp video {
+.proudct-information-video {
     flex: 2;
 }
 
-.proudct-information-warp text {
+.proudct-information-text {
     flex: 1;
+    padding: 0 10px;
+}
+
+.category-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.category-nav li {
+    position: relative;
+}
+
+.category-nav li::after {
+    content: '\\';
+    position: absolute;
+    right: -14px;
+}
+
+.category-nav li:last-child::after {
+    display: none;
 }
