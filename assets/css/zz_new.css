@@ -104,3 +104,43 @@ img {
 .category-nav li:last-child::after {
     display: none;
 }
+
+.author-name {
+    color: #20b84e;
+}
+
+.project-name {
+    font-size: 1.3rem;
+    margin: 20px auto;
+}
+
+.project-process {
+    display: flex;
+    gap: 20px;
+}
+
+.goal-percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #20b84e;
+    border-radius: 1000px;
+    font-size: 0.9rem;
+}
+
+.project-goal {
+    font-size: 0.8rem;
+    color: #bbbaba;
+}
+
+.project-current {
+    font-size: 1.5rem;
+
+}
+
+.project-count {
+    display: flex;
+    gap: 15px;
+}
