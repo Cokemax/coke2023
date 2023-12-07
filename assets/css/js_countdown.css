@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.body {
+    background: #000;
+}
+
 .countdown-warp {
     display: flex;
     align-items: center;
