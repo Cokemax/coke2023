@@ -1,89 +1,228 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可樂網頁</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Noto+Sans+TC:wght@500&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <div>LOGO</div>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/@Paroniie" target="_blank">帕蘿妮</a>
+                    </li>
+                    <li>
+                        <a href="https://book.niceinfos.com/2023/#0" target="_blank">講義</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dashboard" target="_blank">github</a>
+                    </li>
+                    <li>
+                        <a href="https://git-scm.com/" target="_blank">GIT下載</a>
+                    </li>
+                    <li>
+                        <a href="about.html" target="_self">About</a>
+                    </li>
+                    <li>
+                        <a href="practice.html" target="_self">practice</a>
+                    </li>
+                    <li>
+                        <a href="#footer" target="_self">footer</a>
+                    </li>
+                    <li>
+                        <a href="login.html" target="_blank">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+
+
+    <div class="wrap">
+        <div>
+            <h1>Holle</h1>
+            <img src="/assets/images/cat.jpg" alt="This is cat." title="This is cat." />
+        </div>
+
+        <div>
+            <form action="https://book.niceinfos.com/api/form/" method="GET">
+                <h1>單選</h1>
+                <div>
+                    <input type="radio" name="gender" value="male" id="gender-male" /> <label
+                        for="gender-male">男</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="female" id="gender-female" /> <label
+                        for="gender-female">女</label>
+                </div>
+                <div>
+                    <button>發送</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="check">
+            <form action="https://book.niceinfos.com/api/form/" method="post" enctype="multipart/form-data">
+                <h1>多選</h1>
+                <div>
+                    <input type="checkbox" name="music[]" value="a1" id="music-a1" /> <label for="music-a1">A1</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="music[]" value="a2" id="music-a2" /> <label for="music-a2">A2</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="music[]" value="a3" id="music-a3" /> <label for="music-a3">A3</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="music[]" value="a4" id="music-a4" /> <label for="music-a4">A4</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="music[]" value="a5" id="music-a5" /> <label for="music-a5">A5</label>
+                </div>
+                <div>
+                    <select name="country" id="">
+                        <option value="">選擇縣市</option>
+                        <option value="TP">台北</option>
+                        <option value="台中">台中</option>
+                        <option>高雄</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="county[]" multiple>
+                        <option value="">選擇縣市</option>
+                        <option value="TP">台北</option>
+                        <option value="台中">台中</option>
+                        <option>高雄</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="remark" cols="30" rows="10" style="resize: none;"></textarea>
+                </div>
+                <div>
+                    <input type="file" name="my-pic" />
+                </div>
+
+                <div>
+                    <button>發送</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <div class="over" style="color: brown; font-size: 50px;">Overwrite</div>
+
+            <style>
+                div.over {
+                    color: rgb(195, 0, 255);
+                }
+
+                div.over {
+                    color: rgb(94, 255, 0);
+                }
+            </style>
+        </div>
+
+        <div class="back">
+            <div class="cube">CUBE</div>
+        </div>
+
+        <div class="fa-san fa-20 bg-rgb text">
+            Whereas disregard and contempt for human rights have resulted
+        </div>
+
+        <div class="be-image border"></div>
+
+        <div class="circle">hello</div>
+
+        <button class="but">發送</button>
+
+
+        <div class="z-block-wrap">
+            <div class="z-block-item item-1">
+                <div class="z-99">z-index 99</div>
+            </div>
+            <div class="z-block-item item-2">
+                <div class="z-10">z-index 10</div>
+            </div>
+        </div>
+
+        <div class="a1">
+            <div class="a2">
+                <div class="a2-1"></div>
+            </div>
+            <div class="a3">
+                <div class="a2-1"></div>
+            </div>
+            <div class="a4">
+                <div class="a4-1"></div>
+            </div>
+        </div>
+
+
+        <a href="https://github.com/davidworker/davidworker.github.io">老師</a>
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="nav">
+            <div id="footer">到底囉</div>
+            <ul>
+                <li>
+                    <a href="#">TO TOP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
